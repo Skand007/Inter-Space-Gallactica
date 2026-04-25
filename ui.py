@@ -10,7 +10,7 @@ from settings import (
     UI_FONT_NAME,
     CRT_LINE_COLOR,
 )
-from utils.loader import load_image
+from loader import load_image
 
 
 class Starfield:

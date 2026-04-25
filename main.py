@@ -24,7 +24,7 @@ from ui import (
     show_game_over_screen,
 )
 from game import run_game
-from utils.loader import load_scores, save_scores, ensure_scores_file
+from loader import load_scores, save_scores, ensure_scores_file
 
 
 def main():
@@ -41,28 +41,41 @@ def main():
 
     running = True
     while running:
+
+        # ⭐ Start Screen
         action = show_start_screen(win, clock)
+
         if action == "quit":
             running = False
             break
+
         if action == "controls":
             show_controls_screen(win, clock)
             continue
+
         if action == "start":
+            # ⭐ Player 1 Name
             p1_name = name_input_screen(win, clock, 1)
             if p1_name is None:
                 running = False
                 break
+
+            # ⭐ Player 2 Name
             p2_name = name_input_screen(win, clock, 2)
             if p2_name is None:
                 running = False
                 break
 
-            winner, p1_points_match, p2_points_match = run_game(win, clock, p1_name, p2_name)
+            # ⭐ Run Game
+            winner, p1_points_match, p2_points_match = run_game(
+                win, clock, p1_name, p2_name
+            )
+
             if winner is None:
                 running = False
                 break
 
+            # ⭐ Update Scores
             for name, pts in [(p1_name, p1_points_match), (p2_name, p2_points_match)]:
                 if name not in scores:
                     scores[name] = {"wins": 0, "points": 0}
@@ -74,6 +87,7 @@ def main():
 
             save_scores(scores)
 
+            # ⭐ Game Over Screen
             post_action = show_game_over_screen(
                 win,
                 clock,
@@ -84,6 +98,7 @@ def main():
                 p2_points_match,
                 scores,
             )
+
             if post_action == "quit":
                 running = False
 

@@ -13,7 +13,7 @@ from settings import (
     SPACESHIP_WIDTH,
     SPACESHIP_HEIGHT,
 )
-from utils.loader import load_image, load_sound
+from loader import load_image, load_sound
 
 
 def init_gamepad():
