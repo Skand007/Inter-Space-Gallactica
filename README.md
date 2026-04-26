@@ -54,9 +54,16 @@ A fast‑paced, two‑player retro space duel built with **Python + Pygame**, re
    Press **ESC** → quit
 
 ---
+
+## 📸 Screenshots
 ![Start Screen](SS_home.png)
+Home screen layout
+
 ![Gameplay](SS_game.png)
+Gameplay showcase
+
 ![Action](SS_action.png)
+Game in action showcase
 ---
 
 ## 📦 Installation & Running
