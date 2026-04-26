@@ -67,16 +67,63 @@ Game in action showcase
 
 ---
 
+## 📦 Requirements
+
+### ✅ Supported Python Versions (IMPORTANT)
+Pygame **does NOT support Python 3.14** yet.  
+If you use Python 3.14, the game will crash with:
+`NotImplementedError: mixer module not available`
+
+### ✔ Use one of these supported versions:
+- **Python 3.11** (recommended)  
+- **Python 3.12**  
+- **Python 3.10**  
+- **Python 3.9**
+
+### ❌ Not supported:
+- Python **3.13** (partial, unstable)  
+- Python **3.14** (mixer/audio completely broken)
+
+---
+
+## 📦 Requirements
+
+### ✅ Supported Python Versions (IMPORTANT)
+Pygame does NOT support Python 3.14 yet.  
+If you use Python 3.14, the game will crash with:
+NotImplementedError: mixer module not available
+
+### ✔ Use one of these supported versions:
+- Python 3.11 (recommended)
+- Python 3.12
+- Python 3.10
+- Python 3.9
+
+### ❌ Not supported:
+- Python 3.13 (partial, unstable)
+- Python 3.14 (mixer/audio completely broken)
+
+---
+
 ## 📦 Installation & Running
 
-### 1. Install Python 3.9+
+### 1. Install a supported Python version
+Check your Python version:
+python3 --version
 
-Make sure `python` or `python3` is available in your terminal.
+If it shows 3.14.x, install Python 3.11 instead.
 
-### 2. Run the game
+macOS (Homebrew):
+brew install python@3.11
 
-```bash
+### 2. Create a virtual environment (recommended)
+python3.11 -m venv game_venv
+source game_venv/bin/activate
+
+### 3. Install dependencies
+pip install pygame
+
+### 4. Run the game
 python main.py
-# or
+or
 python3 main.py
-
