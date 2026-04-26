@@ -67,3 +67,7 @@ Make sure `python` or `python3` is available in your terminal.
 python main.py
 # or
 python3 main.py
+
+![Gameplay](SS home.png)
+![Gameplay](SS game.png)
+![Gameplay](SS action.png)
