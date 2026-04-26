@@ -70,25 +70,6 @@ Game in action showcase
 ## 📦 Requirements
 
 ### ✅ Supported Python Versions (IMPORTANT)
-Pygame **does NOT support Python 3.14** yet.  
-If you use Python 3.14, the game will crash with:
-`NotImplementedError: mixer module not available`
-
-### ✔ Use one of these supported versions:
-- **Python 3.11** (recommended)  
-- **Python 3.12**  
-- **Python 3.10**  
-- **Python 3.9**
-
-### ❌ Not supported:
-- Python **3.13** (partial, unstable)  
-- Python **3.14** (mixer/audio completely broken)
-
----
-
-## 📦 Requirements
-
-### ✅ Supported Python Versions (IMPORTANT)
 Pygame does NOT support Python 3.14 yet.  
 If you use Python 3.14, the game will crash with:
 NotImplementedError: mixer module not available
