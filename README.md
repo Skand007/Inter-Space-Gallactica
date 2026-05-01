@@ -67,7 +67,7 @@ Game in action showcase
 
 ---
 
-## 📦 Requirements
+## 🧩 Requirements
 
 ### ✅ Supported Python Versions (IMPORTANT)
 Pygame does NOT support Python 3.14 yet.  
@@ -109,4 +109,6 @@ python main.py
 or
 python3 main.py
 
-## VERSION 2.2
+# 📘 VERSION 2.2
+Updated the UI
+Next update will implement autobots and difficulty levels in the bots/CPU
